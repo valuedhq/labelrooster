@@ -1,0 +1,15 @@
+{% capture product_url %}https://valued.de/products/{{ product.handle }}{% endcapture %}
+<div class="high">
+    <img src="https://cdn.shopify.com/s/files/1/0667/0817/7117/files/valued-wortmarke-rot.png?v=1666826683" />
+</div>
+<div class="mid">
+    {{ product_url | qrcode : '65' }}
+</div>
+{% assign variants_priceSort = product.variants | sort: "price" %}
+{% for variant in variants_priceSort %}
+{% if forloop.first %}
+    <div class="low">
+        <p>from {{ variant.price | money_without_trailing_zeros }}</p>
+    </div>
+{% endif %}
+{% endfor %}
