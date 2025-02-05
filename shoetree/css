@@ -1,0 +1,33 @@
+.container {
+    text-align: center;
+}
+
+.high {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
+
+.high img {
+    max-width: 60%;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+}
+
+.product-title {
+    font-size: 12px; /* Adjust size as needed */
+}
+
+.low {
+    text-align: center;
+    font-size: 12px;
+    font-family: Inter;
+}
