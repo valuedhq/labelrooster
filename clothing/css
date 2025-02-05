@@ -1,0 +1,151 @@
+.float-container {
+    border: 4px;
+}
+
+.float-child.left{
+    float:left;
+    width: 105px;
+    height: 132px;
+}
+
+.float-child.right{
+    width:181px;
+    height: 132px;  
+    float:right;
+}
+
+
+.variant-image {
+    position:absolute;
+    width: 100px;
+    height:68px;
+    top:28px;
+    display: inline-block;
+    padding: 2px;
+}
+
+.container1 {
+   font-family:Inter;
+   font-weight:bold;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   width: 105px;
+   height: 34px;
+   background-color: #d0d0d0;
+}
+
+.size{
+    font-family:Inter;
+    text-align: center;
+    padding:0px;
+    font-size:23px;
+}
+
+.variant-image img {
+    position:absolute;
+    width: 105px;
+    height: 68px;
+    display: inline-block;
+}
+
+.redbox{
+   position: absolute;
+   top: 13px;
+   right: 0px;
+   width: 177px;
+   height: 8px;
+   border-radius: 2px;
+   background-color: #e60017;
+}
+.productnamebox{
+    font-family:Inter;
+    position:absolute;
+    top:21px;
+    right:0px;
+    width:177px;
+    height:36px;
+}
+
+.productnametext{
+    white-space:initial;
+    text-align:center;
+    font-size:85%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-sizing:border-box;
+    width:100%;
+    height:100%;
+    line-height:13px;
+}
+
+.productname-small{
+    padding: 1px;
+    font-family:Inter;
+    font-weight:bold;
+    font-size:11px;
+    text-align:center;
+}
+
+.productname-mid{
+    padding: 8px;
+    font-family:Inter;
+    font-weight:bold;
+    font-size:12px;
+    text-align:center;
+}
+
+.productname-big{
+    padding: 10px;
+    font-family:Inter;
+    font-weight:bold;
+    font-size:14px;
+    text-align:center;
+}
+
+.productcodes{
+    font-family:Inter;
+    position:absolute;
+    top:59px;
+    right:0px;
+    width:177px;
+    height:28px;
+    border-top: 1px solid black;
+}
+.codeuno{
+    font-family:Inter;
+    width:90px;
+    height:28PX;
+    float:left;
+    padding:6px;
+    font-size:11px;
+    text-align:center;
+}
+.codedos{
+    font-family:Inter;
+    border-left: 1px solid black;
+    width:79px;
+    height:28px;
+    float: right;
+    padding:6px;
+    font-size:11px;
+    text-align:center;
+}
+.barcode{
+    position:absolute;
+    top:44px;
+    left:60px;
+    width:153px;
+    height:45px;
+    text-align:center;
+    font-size:12px;
+}
+
+.valued-image{
+   position:absolute;
+   left:2px;
+   top:3px;
+   width: 102px;
+   height: 24px;
+}
