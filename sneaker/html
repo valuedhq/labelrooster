@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+<div class="float-container">
+    <div class="float-child left">
+        <div class="valued-image">
+            <img src="https://cdn.shopify.com/s/files/1/0667/0817/7117/files/valued-wort-bildmarke-rot.png?v=1666858100" />
+        </div>
+        <div class="variant-image">
+            <img src="{{ product.image.src }}" />
+        </div>
+        <div class="container1">
+            <div class="size">
+                {{ variant.title | split: ' EU' | first }} 
+            </div>
+        </div>
+    </div>
+    <div class="float-child right">
+        <div class="{% if variant.title contains 'C50T19' or variant.title contains 'C70T0' %}redbox{% else %}greybox{% endif %}">
+        </div>
+    </div>
+    <div class="productnamebox">
+        <div class="productnametext">
+            {{ product.title }}
+        </div>
+    </div>
+    <div class="productcodes">
+        <div class="codeuno">
+            <b>
+                {{ variant.sku }}
+            </b>
+        </div>
+        <div class="codedos">
+            <b>
+                {{ variant.title | split: ' /' | last }} 
+            </b>
+        </div>            
+    </div>
+    <div class="barcode">
+        {% if variant.barcode %}
+            {{ variant.barcode | barcode_text : '128' }}<br />
+        {% else %}
+            {{ variant.id | barcode_text : '128' }}<br />
+        {% endif %}
+    </div>
+</div>
