@@ -1,0 +1,23 @@
+.high {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
+
+.high img {
+    max-width: 60%;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.low {
+    text-align: center;
+    font-size: 12px;
+}
